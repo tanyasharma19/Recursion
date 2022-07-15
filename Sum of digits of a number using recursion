@@ -1,0 +1,6 @@
+def sumofdigits(n):
+    assert n>=0 and int(n)==n, 'Please enter a positive integer only!'
+    if n>=0 and n<=9:
+        return n
+    else:
+        return n%10+sumofdigits(int(n/10))
