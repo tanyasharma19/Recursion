@@ -1,0 +1,6 @@
+def FindBiggestNumber(Samplearray):
+    biggestnum=Samplearray[0]
+    for i in range (1, len(Samplearray)):
+        if biggestnum<Samplearray[i]:
+            biggestnum=Samplearray[i]
+    return biggestnum
